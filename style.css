@@ -1,0 +1,112 @@
+/* Styles for the overall page */
+body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+    }
+/* Main container for all content */
+    .container {
+      background: rgb(255, 255, 255);
+      border: 1px solid  white;
+      border-radius: 5px;
+      padding: 20px;
+      max-width: 400px;
+      width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);/* Subtle shadow around box */
+    }
+/* Title of the page */
+    .title {
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      color: #7a7979;
+      text-shadow: rgb(56, 56, 56) 1px 1px 1px;
+      padding: 5px;
+      margin-bottom: 20px;
+      letter-spacing: 2px; /* Spacing between letters */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+    }
+/* Each radio option box */
+    .option {
+      border: 1px solid green;
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 15px;
+      position: relative;
+      background: rgb(255, 255, 255);
+      font-weight: bold;
+      color: rgb(114, 113, 113);
+      
+    }
+/* Style for radio inputs */  
+    .option input[type="radio"] {
+      margin-right: 8px;
+    }
+/* Hidden by default: details for each option shown only when active */
+    .unit-details {
+      display: none;
+      margin-top: 10px;
+    }
+/* Price and discount info */
+    .unit-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+    }
+/* Original price with strikethrough */
+    .unit-info span.strike {
+      text-decoration: line-through;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+/* Dropdown row for sizes and colors */
+    .selector-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+/* Style for select dropdowns */
+    select {
+      padding: 4px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+/* Summary section with price and delivery */
+    .summary {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+
+    .summary .free {
+      color: green;
+    }
+/* Add to cart button */
+    .add-to-cart {
+      background: green;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+/* Footer text */
+    .powered {
+      text-align: center;
+      font-size: 10px;
+      color: #aaa;
+      margin-top: 10px;
+    }
+/* When a box is active, show its details */
+    .option.active .unit-details {
+      display: block;
+    }
